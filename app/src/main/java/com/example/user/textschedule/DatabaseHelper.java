@@ -20,7 +20,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 + Status.COLUMN_NAME + " TEXT, "
                 + Status.COLUMN_MESSAGE + " TEXT, "
                 + Status.COLUMN_RECIPIENTS + " ," //EDIT
-                + Status.COLUMN_ACTIVE + " TINYINT"
+                + Status.COLUMN_ACTIVE + " INT"
     }
 
     @Override

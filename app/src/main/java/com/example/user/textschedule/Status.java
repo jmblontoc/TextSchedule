@@ -19,7 +19,7 @@ public class Status {
     public String name;
     public String message;
     public ArrayList<String> recipients;
-    public boolean active;
+    public int active;
 
     public Status(String name, String message, ArrayList<String> recipients) {
         this.name = name;
