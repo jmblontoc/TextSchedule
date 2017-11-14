@@ -9,6 +9,8 @@ public class MainActivity extends AppCompatActivity {
 
     RecyclerView rvTexts;
     TextView tvSchedule;
+    TextView tvAutoReply;
+    TextView tvStatus;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
