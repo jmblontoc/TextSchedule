@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">TextSchedule</string>
+    <string name="compose_hint">hint</string> //to be revised
 </resources>
