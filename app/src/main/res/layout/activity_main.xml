@@ -51,9 +51,27 @@
 
     </LinearLayout>
 
-    <android.support.v7.widget.RecyclerView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/rv_text">
-    </android.support.v7.widget.RecyclerView>
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rv_text">
+        </android.support.v7.widget.RecyclerView>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add_circle_black_24dp"
+            android:id="@+id/add_btn"
+            android:layout_alignBottom="@id/rv_text"
+            android:layout_alignRight="@id/rv_text"
+            android:tint="@color/colorPrimary"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="13dp"
+            android:background="#00000000" />
+
+    </RelativeLayout>
 </LinearLayout>
