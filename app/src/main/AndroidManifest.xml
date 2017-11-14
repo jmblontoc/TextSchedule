@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.user.textschedule">
-
+    <uses-permission android:name="android.permission.SEND_SMS"></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
 
     <application
@@ -19,7 +20,13 @@
             </intent-filter>
         </activity>
         <activity android:name=".StatusActivity" />
+        <receiver android:name=".AlarmReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
         <activity android:name=".AddStatus"></activity>
+        <activity android:name=".AddSchedule"></activity>
     </application>
 
 </manifest>
