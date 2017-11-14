@@ -19,7 +19,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 + Status.COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
                 + Status.COLUMN_NAME + " TEXT, "
                 + Status.COLUMN_MESSAGE + " TEXT, "
-                + Status.COLUMN_RECIPIENTS + " "
+                + Status.COLUMN_RECIPIENTS + " ," //EDIT
+                + Status.COLUMN_ACTIVE + " TINYINT"
     }
 
     @Override
