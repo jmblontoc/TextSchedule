@@ -15,8 +15,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RetrieveContacts">
-        </activity>
+        <activity android:name=".RetrieveContacts" />
         <activity android:name=".StatusActivity" />
 
         <receiver android:name=".AlarmReceiver">
@@ -41,7 +40,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ViewStatus"></activity>
+        <activity android:name=".ViewStatus" />
+        <activity android:name=".AutoReplyActivity" />
+        <activity android:name=".AddAutoReply" />
+        <activity android:name=".EditAutoReply"></activity>
     </application>
 
 </manifest>

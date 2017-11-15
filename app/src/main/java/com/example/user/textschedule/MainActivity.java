@@ -45,5 +45,17 @@ public class MainActivity extends AppCompatActivity {
                 startActivityForResult(i,0);
             }
         });
+
+
+        // parts ko - JM
+        tvAutoReply = (TextView) findViewById(R.id.autoreply_link);
+        tvAutoReply.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent();
+                i.setClass(getBaseContext(), AutoReplyActivity.class);
+                startActivityForResult(i,0);
+            }
+        });
     }
 }
