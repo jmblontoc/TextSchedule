@@ -12,7 +12,6 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     ImageButton btnAdd, btnDelete;
     RecyclerView rvTexts;
-    TextView tvSchedule;
     TextView tvAutoReply;
     TextView tvStatus;
 
