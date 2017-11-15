@@ -13,6 +13,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Schedule a text:"
+        android:textSize="20sp"
         />
         <TextView
             android:layout_width="fill_parent"
@@ -52,7 +53,7 @@
             android:id="@+id/sendsms"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text=" Send SMS "
+            android:text=" Schedule Message "
             />
     </LinearLayout>
 

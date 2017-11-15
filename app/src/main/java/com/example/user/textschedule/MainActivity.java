@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        rvTexts = (RecyclerView) findViewById(R.id.rv_text);
+        /*rvTexts = (RecyclerView) findViewById(R.id.rv_text);*/
 
         //insert data on Recycler View
 
