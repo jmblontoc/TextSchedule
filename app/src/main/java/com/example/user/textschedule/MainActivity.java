@@ -23,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
 
         /*rvTexts = (RecyclerView) findViewById(R.id.rv_text);*/
 
+        tvStatus = (TextView) findViewById(R.id.status_link);
+
         //insert data on Recycler View
 
         btnAdd = (ImageButton) findViewById(R.id.add_btn);
@@ -40,6 +42,27 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent i = new Intent();
                 i.setClass(getBaseContext(), DeleteSchedule.class);
+                startActivityForResult(i,0);
+            }
+        });
+
+        tvStatus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent();
+                i.setClass(getBaseContext(), StatusActivity.class);
+                startActivityForResult(i,0);
+            }
+        });
+
+
+        // parts ko - JM
+        tvAutoReply = (TextView) findViewById(R.id.autoreply_link);
+        tvAutoReply.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent();
+                i.setClass(getBaseContext(), AutoReplyActivity.class);
                 startActivityForResult(i,0);
             }
         });

@@ -4,51 +4,48 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.LinearLayout;
-import android.widget.TextView;
+import android.widget.ImageView;
 
-public class StatusActivity extends AppCompatActivity {
+public class AutoReplyActivity extends AppCompatActivity {
 
-    TextView tvSchedule;
-    TextView tvAutoReply;
     ImageButton addBtn;
-    LinearLayout lyGaming;
+    View sample;
+    ImageView deleteBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_status);
+        setContentView(R.layout.auto_replies_index);
 
-        tvSchedule = (TextView) findViewById(R.id.schedule_link);
-        tvAutoReply = (TextView) findViewById(R.id.autoreply_link);
         addBtn = (ImageButton) findViewById(R.id.add_btn);
-        lyGaming = (LinearLayout) findViewById(R.id.ly_gaming);
-
         addBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent();
-                i.setClass(getBaseContext(), AddStatus.class);
+                i.setClass(getBaseContext(), AddAutoReply.class);
                 startActivityForResult(i,0);
             }
         });
 
-        tvSchedule.setOnClickListener(new View.OnClickListener() {
+        sample = findViewById(R.id.sample_view);
+        sample.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent();
-                i.setClass(getBaseContext(), MainActivity.class);
+                i.setClass(getBaseContext(), EditAutoReply.class);
                 startActivityForResult(i,0);
             }
         });
 
-        lyGaming.setOnClickListener(new View.OnClickListener() {
+        deleteBtn = (ImageView) findViewById(R.id.delete_btn);
+        deleteBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent();
-                i.setClass(getBaseContext(), ViewStatus.class);
-                startActivityForResult(i,0);
+                DeleteDialog dd = new DeleteDialog();
+
+                dd.show(getSupportFragmentManager(), "");
             }
         });
     }
