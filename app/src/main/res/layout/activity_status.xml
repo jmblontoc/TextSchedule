@@ -79,7 +79,6 @@
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
                 android:paddingLeft="20dp"
-                android:layout_weight=""
                 android:orientation="horizontal">
 
                 <LinearLayout
@@ -142,7 +141,6 @@
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
                 android:paddingLeft="20dp"
-                android:layout_weight=""
                 android:orientation="horizontal">
 
                 <LinearLayout
@@ -205,7 +203,6 @@
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
                 android:paddingLeft="20dp"
-                android:layout_weight=""
                 android:orientation="horizontal">
 
                 <LinearLayout
@@ -252,7 +249,6 @@
                 </LinearLayout>
 
                 <CheckBox
-                    android:layout_weight=""
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -268,7 +264,6 @@
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
                 android:paddingLeft="20dp"
-                android:layout_weight=""
                 android:orientation="horizontal">
 
                 <LinearLayout
