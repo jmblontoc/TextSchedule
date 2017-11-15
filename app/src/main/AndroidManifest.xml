@@ -40,7 +40,8 @@
         </receiver>
 
         <activity android:name=".MainActivity" />
-        <activity android:name=".ViewStatus"></activity>
+        <activity android:name=".ViewStatus" />
+        <activity android:name=".DeleteSchedule"></activity>
     </application>
 
 </manifest>
