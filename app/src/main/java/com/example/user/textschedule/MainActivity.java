@@ -10,9 +10,8 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    ImageButton btnAdd;
+    ImageButton btnAdd, btnDelete;
     RecyclerView rvTexts;
-    TextView tvSchedule;
     TextView tvAutoReply;
     TextView tvStatus;
 
@@ -33,6 +32,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent i = new Intent();
                 i.setClass(getBaseContext(), AddSchedule.class);
+                startActivityForResult(i,0);
+            }
+        });
+        btnDelete = (ImageButton) findViewById(R.id.delete_btn);
+        btnDelete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent();
+                i.setClass(getBaseContext(), DeleteSchedule.class);
                 startActivityForResult(i,0);
             }
         });
