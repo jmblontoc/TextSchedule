@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/TextSchedule.iml" filepath="$PROJECT_DIR$/TextSchedule.iml" />
-      <module fileurl="file://$PROJECT_DIR$/TextSchedule2.iml" filepath="$PROJECT_DIR$/TextSchedule2.iml" />
+      <module fileurl="file://C:\Users\Manlapaz\Documents\2017-18\MOBIDEV\TextSchedule\TextSchedule2.iml" filepath="C:\Users\Manlapaz\Documents\2017-18\MOBIDEV\TextSchedule\TextSchedule2.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
